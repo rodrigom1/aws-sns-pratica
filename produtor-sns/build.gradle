@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'br.com.sns'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-sns', version: '1.11.707'
+    compile group: 'org.json', name: 'json', version: '20190722'
+}
